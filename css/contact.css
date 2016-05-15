@@ -1,0 +1,341 @@
+@font-face {
+    font-family: 'novecento';
+    src: url(../fonts/Novecentosanswide-DemiBold-webfont.eot);
+    src: url(../fonts/Novecentosanswide-DemiBold-webfont.woff2) format('woff2'),
+         url(../fonts/Novecentosanswide-DemiBold-webfont.woff) format('woff'),
+         url(../fonts/Novecentosanswide-DemiBold-webfont.ttf) format('truetype'),
+         url(../fonts/Novecentosanswide-DemiBold-webfont.svg#novecento_sans_widedemibold) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'helvetica';
+	src: url(../fonts/helveticaneuecyr-roman.otf);
+	}
+body{
+	font: 400 14px/1.57 'helvetica', sans-serif;
+	color:  #8a8888;
+}
+
+/* Typography */
+h3 {
+	margin: 0;
+	padding: 0;
+	font-family: 'novecento', sans-serif;
+	color:  #737373;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1;
+	text-transform: uppercase;
+}
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	font-family: 'novecento';
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.2;
+	display: inline-block;
+	padding: 15px 20px;
+	background-color: #2ecc71;
+	border: 1px solid #2ECC71;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+}
+.ba-button:hover {
+	background: #fff;
+	color: #2ECC71;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+/* Layout */
+.ba-container{
+	max-width: 960px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/* header */
+
+.ba-header__up {
+	padding: 30px 0;
+	border-bottom: 1px solid #dadada;
+}
+.ba-header__social {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.ba-header__social li {
+	float: left;
+	padding-left: 10px;
+	padding-top: 8px;
+}
+.ba-header__social a {
+	text-decoration: none;
+}
+.ba-header__social a svg {
+	fill: #dadada;
+}
+.twitter:hover  {
+	fill: #21A2F2;
+}
+.facebook:hover {
+	fill: #3A5795;
+}
+.rss:hover {
+	fill: #FB7629;
+}
+.pinterest:hover{
+	fill: #BD2126;
+}
+.google:hover {
+	fill: #CE4232;
+}
+.dribble:hover {
+	fill: #C52563;
+}
+.ba-header__down ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.ba-header__down li{
+	float: left;
+	padding: 30px 15px 30px 0;
+}
+.ba-header__down a {
+	font-family: 'novecento', sans-serif;
+	color:  #737373;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #737373;
+}
+.ba-header__down a.active,
+.ba-header__down a:hover{
+	color: #2ecc71;
+}
+
+@media (max-width: 320px){
+	.ba-header__up {
+		padding: 10px 0;
+	}
+	.ba-header__social {
+		float: none;
+	}
+	.ba-header__social li{
+		padding-top: 0;
+	}
+	.ba-header__down li {
+		padding: 0 10px 0 0;
+	}
+	.ba-header__down li:last-child{
+		padding: 0;
+	}
+}
+/* end header */
+
+
+/* Got a Question or INquiry?*/
+
+.ba-contact {
+	background-color:  #2ecc71;
+	padding: 40px 0;
+}
+.ba-contact h3 {
+	color:  #ffffff;
+	font-size: 30px;
+}
+
+/* map */
+
+.ba-map {
+	height: 500px;
+}
+
+/* contact form */
+
+.ba-contact-from {
+	padding: 50px 0;
+}
+.ba-form-name,
+.ba-form-password,
+.ba-form-subject {
+	width: 70%;
+	padding: 16px;
+	margin-bottom: 15px;
+	outline: none;
+	border: 2px solid #8a8888; ;
+}
+.ba-form-textarea {
+	width: 100%;
+	outline: none;
+	padding: 16px;
+	margin-bottom: 15px;
+	border: 2px solid #8a8888;
+}
+.ba-contact-info a{
+	color: #8a8888;
+	text-decoration: none;
+}
+a.ba-contact-info__mail {
+	color: #2ecc71;
+}
+.ba-contact-info__schedule h3 {
+	margin-top: 50px;
+}
+.ba-contact-info__days,
+.ba-contact-info__hours {
+	list-style: none;
+	padding: 0;
+}
+.ba-contact-info__days {
+	float: left;
+}
+.ba-contact-info__hours{
+	float: right;
+}
+.ba-contact-info__days li,
+.ba-contact-info__hours li {
+	padding: 5px 0;
+}
+.ba-form-name:hover, .ba-form-name:focus,
+.ba-form-password:hover, .ba-form-password:focus,
+.ba-form-subject:hover ,.ba-form-subject:focus,
+.ba-form-textarea:hover, .ba-form-textarea:focus{
+	border: 2px solid #2ecc71;
+}
+@media (max-width: 320px){
+	.ba-width-2-3,
+	.ba-width-1-3{
+		float: none;
+		width: 100%;
+	}
+	.ba-contact-info {
+		padding-top: 10px;
+	}
+}
+
+
+
+/* footer */
+.ba-footer-up {
+	background-color:  #322f2f;
+	background-size: cover;
+	padding: 50px 0;
+
+}
+.ba-footer-up h3{
+	color: #efefef;;
+	padding: 10px;
+}
+.ba-footer-down {
+	padding: 30px 0;
+}
+.ba-footer-down p,
+.ba-footer-down a
+ {
+	font-family: Novecentowide;
+	color:  #a5a5a5;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 18px;
+}
+.ba-footer-link {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.ba-footer-link li {
+	float: left;
+	padding-left: 10px;
+}
+.ba-footer-link a {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-left: 13px;
+	display: block;
+	position: relative;
+}
+.ba-footer-link a:after{
+	 content:'';
+	 height: 10px;
+	 background: rgba(165, 165,165, 1);
+	 width: 1px;
+	 position: absolute;
+	 left: 0;
+	 top: 50%;
+	 margin-top: -5px;
+	 transform:skew(-20deg);
+}
+.ba-footer-link li:first-child {
+	 padding-left: 0;
+}
+.ba-footer-link li:first-child a{
+	 padding-left: 0;
+}
+.ba-footer-link li:first-child a:after {
+	 display: none;
+	 }
+.ba-footer-link a:hover {
+	color: #2ECC71;
+}
+@media (max-width: 320px) {
+	.ba-footer-up {
+		padding: 10px 0;
+		text-align: center;
+	}
+	.ba-button {
+		float: none;
+	}
+	.ba-footer-down {
+		padding: 10px 0;
+		text-align: center;
+	}
+	.ba-footer-link {
+		float: left;
+	}
+}
